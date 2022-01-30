@@ -2,10 +2,7 @@
 Stargaze.xcworkspace/xcuserdata/
 Stargaze.xcodeproj/xcuserdata/
 */xcuserdata/
-
-# Scripts
-
-CI/scripts/build/output
+xcuserdata
 
 
 # Folders
