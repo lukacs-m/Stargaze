@@ -1,0 +1,19 @@
+# Main Projet Settings
+Stargaze.xcworkspace/xcuserdata/
+Stargaze.xcodeproj/xcuserdata/
+*/xcuserdata/
+
+# Scripts
+
+CI/scripts/build/output
+
+
+# Folders
+*.DS_Store
+
+# Frameworks
+
+Frameworks/*/.swiftpm
+
+# Project
+Stargaze.xcodeproj/project.xcworkspace/xcuserdata/

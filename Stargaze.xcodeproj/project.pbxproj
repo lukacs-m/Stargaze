@@ -14,6 +14,9 @@
 		B87E491027A7019F002E5111 /* StargazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E490F27A7019F002E5111 /* StargazeTests.swift */; };
 		B87E491A27A7019F002E5111 /* StargazeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E491927A7019F002E5111 /* StargazeUITests.swift */; };
 		B87E491C27A7019F002E5111 /* StargazeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E491B27A7019F002E5111 /* StargazeUITestsLaunchTests.swift */; };
+		B87E492A27A70220002E5111 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = B87E492927A70220002E5111 /* Resolver */; };
+		B87E492D27A70239002E5111 /* SwiftUICombineToolBox in Frameworks */ = {isa = PBXBuildFile; productRef = B87E492C27A70239002E5111 /* SwiftUICombineToolBox */; };
+		B87E493027A7031E002E5111 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B87E492F27A7031E002E5111 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,7 @@
 		B87E491527A7019F002E5111 /* StargazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87E491927A7019F002E5111 /* StargazeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazeUITests.swift; sourceTree = "<group>"; };
 		B87E491B27A7019F002E5111 /* StargazeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B87E493427A70474002E5111 /* PersistenceStorage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PersistenceStorage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87E493027A7031E002E5111 /* Kingfisher in Frameworks */,
+				B87E492D27A70239002E5111 /* SwiftUICombineToolBox in Frameworks */,
+				B87E492A27A70220002E5111 /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,7 @@
 		B87E48F227A7019D002E5111 = {
 			isa = PBXGroup;
 			children = (
+				B87E493327A7038E002E5111 /* Frameworks */,
 				B87E48FD27A7019D002E5111 /* Stargaze */,
 				B87E490E27A7019F002E5111 /* StargazeTests */,
 				B87E491827A7019F002E5111 /* StargazeUITests */,
@@ -127,6 +135,14 @@
 			path = StargazeUITests;
 			sourceTree = "<group>";
 		};
+		B87E493327A7038E002E5111 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B87E493427A70474002E5111 /* PersistenceStorage */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +159,11 @@
 			dependencies = (
 			);
 			name = Stargaze;
+			packageProductDependencies = (
+				B87E492927A70220002E5111 /* Resolver */,
+				B87E492C27A70239002E5111 /* SwiftUICombineToolBox */,
+				B87E492F27A7031E002E5111 /* Kingfisher */,
+			);
 			productName = Stargaze;
 			productReference = B87E48FB27A7019D002E5111 /* Stargaze.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +236,11 @@
 				Base,
 			);
 			mainGroup = B87E48F227A7019D002E5111;
+			packageReferences = (
+				B87E492827A70220002E5111 /* XCRemoteSwiftPackageReference "Resolver" */,
+				B87E492B27A70238002E5111 /* XCRemoteSwiftPackageReference "SwiftUICombineToolBox" */,
+				B87E492E27A7031E002E5111 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = B87E48FC27A7019D002E5111 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -585,6 +611,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B87E492827A70220002E5111 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B87E492B27A70238002E5111 /* XCRemoteSwiftPackageReference "SwiftUICombineToolBox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukacs-m/SwiftUICombineToolBox";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B87E492E27A7031E002E5111 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B87E492927A70220002E5111 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B87E492827A70220002E5111 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+		B87E492C27A70239002E5111 /* SwiftUICombineToolBox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B87E492B27A70238002E5111 /* XCRemoteSwiftPackageReference "SwiftUICombineToolBox" */;
+			productName = SwiftUICombineToolBox;
+		};
+		B87E492F27A7031E002E5111 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B87E492E27A7031E002E5111 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B87E48F327A7019D002E5111 /* Project object */;
 }
