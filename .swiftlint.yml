@@ -1,7 +1,6 @@
 included:
-  - Sources
-excluded:
-  - Sources/DeezerPIPENetwork/ApolloQueriesConfigs/*
+  - Stargaze
+  - StargazeTests
 analyzer_rules:
   - unused_declaration
   - unused_import

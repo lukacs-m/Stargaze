@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B87E48FF27A7019D002E5111 /* StargazeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E48FE27A7019D002E5111 /* StargazeApp.swift */; };
-		B87E490127A7019D002E5111 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E490027A7019D002E5111 /* ContentView.swift */; };
 		B87E490327A7019F002E5111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87E490227A7019F002E5111 /* Assets.xcassets */; };
 		B87E490627A7019F002E5111 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87E490527A7019F002E5111 /* Preview Assets.xcassets */; };
 		B87E491027A7019F002E5111 /* StargazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E490F27A7019F002E5111 /* StargazeTests.swift */; };
@@ -17,6 +16,14 @@
 		B87E492A27A70220002E5111 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = B87E492927A70220002E5111 /* Resolver */; };
 		B87E492D27A70239002E5111 /* SwiftUICombineToolBox in Frameworks */ = {isa = PBXBuildFile; productRef = B87E492C27A70239002E5111 /* SwiftUICombineToolBox */; };
 		B87E493027A7031E002E5111 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B87E492F27A7031E002E5111 /* Kingfisher */; };
+		B87E494027A72257002E5111 /* Tools+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E493B27A72257002E5111 /* Tools+Dependencies.swift */; };
+		B87E494127A72257002E5111 /* Routing+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E493C27A72257002E5111 /* Routing+Dependencies.swift */; };
+		B87E494227A72257002E5111 /* ViewModels+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E493D27A72257002E5111 /* ViewModels+Dependencies.swift */; };
+		B87E494327A72257002E5111 /* Repositories+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E493E27A72257002E5111 /* Repositories+Dependencies.swift */; };
+		B87E494427A72257002E5111 /* DependenciesRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E493F27A72257002E5111 /* DependenciesRegistration.swift */; };
+		B87E494627A72274002E5111 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E494527A72274002E5111 /* MainCoordinator.swift */; };
+		B87E494A27A722B2002E5111 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E494827A722B2002E5111 /* RootView.swift */; };
+		B87E494B27A722B2002E5111 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87E494927A722B2002E5111 /* RootViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +46,6 @@
 /* Begin PBXFileReference section */
 		B87E48FB27A7019D002E5111 /* Stargaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stargaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87E48FE27A7019D002E5111 /* StargazeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazeApp.swift; sourceTree = "<group>"; };
-		B87E490027A7019D002E5111 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B87E490227A7019F002E5111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B87E490527A7019F002E5111 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B87E490B27A7019F002E5111 /* StargazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +54,14 @@
 		B87E491927A7019F002E5111 /* StargazeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazeUITests.swift; sourceTree = "<group>"; };
 		B87E491B27A7019F002E5111 /* StargazeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B87E493427A70474002E5111 /* PersistenceStorage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PersistenceStorage; sourceTree = "<group>"; };
+		B87E493B27A72257002E5111 /* Tools+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tools+Dependencies.swift"; sourceTree = "<group>"; };
+		B87E493C27A72257002E5111 /* Routing+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Routing+Dependencies.swift"; sourceTree = "<group>"; };
+		B87E493D27A72257002E5111 /* ViewModels+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels+Dependencies.swift"; sourceTree = "<group>"; };
+		B87E493E27A72257002E5111 /* Repositories+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repositories+Dependencies.swift"; sourceTree = "<group>"; };
+		B87E493F27A72257002E5111 /* DependenciesRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesRegistration.swift; sourceTree = "<group>"; };
+		B87E494527A72274002E5111 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		B87E494827A722B2002E5111 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B87E494927A722B2002E5111 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +116,10 @@
 		B87E48FD27A7019D002E5111 /* Stargaze */ = {
 			isa = PBXGroup;
 			children = (
-				B87E48FE27A7019D002E5111 /* StargazeApp.swift */,
-				B87E490027A7019D002E5111 /* ContentView.swift */,
-				B87E490227A7019F002E5111 /* Assets.xcassets */,
-				B87E490427A7019F002E5111 /* Preview Content */,
+				B87E493827A721DD002E5111 /* AppManagement */,
+				B87E493727A721D3002E5111 /* Common */,
+				B87E493627A721CC002E5111 /* App */,
+				B87E493527A721C5002E5111 /* Scenes */,
 			);
 			path = Stargaze;
 			sourceTree = "<group>";
@@ -143,6 +157,69 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
+		B87E493527A721C5002E5111 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B87E494727A72294002E5111 /* RootView */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B87E493627A721CC002E5111 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B87E48FE27A7019D002E5111 /* StargazeApp.swift */,
+				B87E490227A7019F002E5111 /* Assets.xcassets */,
+				B87E490427A7019F002E5111 /* Preview Content */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B87E493727A721D3002E5111 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B87E493827A721DD002E5111 /* AppManagement */ = {
+			isa = PBXGroup;
+			children = (
+				B87E493A27A7223E002E5111 /* Coordinator */,
+				B87E493927A72228002E5111 /* DependencyInjector */,
+			);
+			path = AppManagement;
+			sourceTree = "<group>";
+		};
+		B87E493927A72228002E5111 /* DependencyInjector */ = {
+			isa = PBXGroup;
+			children = (
+				B87E493B27A72257002E5111 /* Tools+Dependencies.swift */,
+				B87E493C27A72257002E5111 /* Routing+Dependencies.swift */,
+				B87E493D27A72257002E5111 /* ViewModels+Dependencies.swift */,
+				B87E493E27A72257002E5111 /* Repositories+Dependencies.swift */,
+				B87E493F27A72257002E5111 /* DependenciesRegistration.swift */,
+			);
+			path = DependencyInjector;
+			sourceTree = "<group>";
+		};
+		B87E493A27A7223E002E5111 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B87E494527A72274002E5111 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B87E494727A72294002E5111 /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				B87E494827A722B2002E5111 /* RootView.swift */,
+				B87E494927A722B2002E5111 /* RootViewModel.swift */,
+			);
+			path = RootView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B87E491F27A7019F002E5111 /* Build configuration list for PBXNativeTarget "Stargaze" */;
 			buildPhases = (
+				B87E494C27A727D9002E5111 /* SwiftLint */,
 				B87E48F727A7019D002E5111 /* Sources */,
 				B87E48F827A7019D002E5111 /* Frameworks */,
 				B87E48F927A7019D002E5111 /* Resources */,
+				B87E494D27A727EB002E5111 /* SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -278,13 +357,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B87E494C27A727D9002E5111 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nPATH=/opt/homebrew/bin/:$PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		B87E494D27A727EB002E5111 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=/opt/homebrew/bin/:$PATH\n\nif which swiftformat >/dev/null; then\nswiftformat .\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B87E48F727A7019D002E5111 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B87E490127A7019D002E5111 /* ContentView.swift in Sources */,
+				B87E494B27A722B2002E5111 /* RootViewModel.swift in Sources */,
+				B87E494627A72274002E5111 /* MainCoordinator.swift in Sources */,
 				B87E48FF27A7019D002E5111 /* StargazeApp.swift in Sources */,
+				B87E494027A72257002E5111 /* Tools+Dependencies.swift in Sources */,
+				B87E494127A72257002E5111 /* Routing+Dependencies.swift in Sources */,
+				B87E494A27A722B2002E5111 /* RootView.swift in Sources */,
+				B87E494327A72257002E5111 /* Repositories+Dependencies.swift in Sources */,
+				B87E494227A72257002E5111 /* ViewModels+Dependencies.swift in Sources */,
+				B87E494427A72257002E5111 /* DependenciesRegistration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +569,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Stargaze/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Stargaze/App/Preview Content\"";
 				DEVELOPMENT_TEAM = WLGFZCD2AB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -473,7 +598,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Stargaze/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Stargaze/App/Preview Content\"";
 				DEVELOPMENT_TEAM = WLGFZCD2AB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

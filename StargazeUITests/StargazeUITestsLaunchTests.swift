@@ -8,7 +8,6 @@
 import XCTest
 
 class StargazeUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
