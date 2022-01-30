@@ -1,4 +1,4 @@
-name: CI-Test
+name: Stargaze CI
 
 on: [push]
 
@@ -12,13 +12,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
+      - name: Lint
+        run: swiftlint
       - name: Build
-        run: |
+        run:
           xcodebuild clean build -project Stargaze.xcodeproj -scheme Stargaze -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env:
          destination: ${{ matrix.destination }}
       - name: Test
-        run: |
-          xcodebuild clean test -scheme Stargaze -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO | xcpretty
+        run: 
+          set -o pipefail && xcodebuild clean test -scheme Stargaze -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO | xcpretty
         env:
          destination: ${{ matrix.destination }}
