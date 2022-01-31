@@ -3,13 +3,14 @@ name: Stargaze CodeCoverage
 on: [push]
 
 jobs:
-  codecov:
-    container:
-      image: swift:5.3
-    runs-on: ubuntu-latest
+  build:
+    runs-on: macOS-latest
     steps:
-    - uses: actions/checkout@v2
-    - run: swift test --enable-test-discovery --enable-code-coverage
-    - uses: mattpolzin/swift-codecov-action@0.6.0
-      with:
-        MINIMUM_COVERAGE: 85
+      - name: Test
+        uses: actions/checkout@v2
+      - name: Build and Test
+        run:  xcodebuild test -project Stargaze.xcodeproj -scheme Stargaze -destination 'platform=iOS Simulator,name=iPhone 12,OS=Latest' -enableCodeCoverage YES build test
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1.2.1
+
+

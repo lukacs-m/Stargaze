@@ -7,7 +7,7 @@
 
 import XCTest
 
- class StargazeUITestsLaunchTests: XCTestCase {
+class StargazeUITestsLaunchTests: XCTestCase {
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
@@ -28,4 +28,4 @@ import XCTest
         attachment.lifetime = .keepAlways
         add(attachment)
     }
- }
+}
